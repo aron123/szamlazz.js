@@ -7,10 +7,10 @@
     "node": ">=14.13.1 || >=16.0.0"
   },
   "scripts": {
-    "preinstall": "npm install",
     "test": "./node_modules/.bin/mocha 'tests/*.spec.js'",
     "testWatch": "mocha 'tests/*.spec.js' --watch"
   },
+  "private": true,
   "author": "Elastic Wings Ltd.",
   "license": "MIT",
   "files": [
