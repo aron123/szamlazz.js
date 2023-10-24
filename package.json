@@ -1,19 +1,15 @@
 {
   "name": "szamlazz.js",
-  "version": "6.1.0",
+  "version": "6.1.0-custom",
   "description": "Integration module for the szamlazz.hu online invoice provider",
-  "type": "module",
   "exports": "./index.js",
   "engines": {
     "node": ">=14.13.1 || >=16.0.0"
   },
+  "private": true,
   "scripts": {
     "test": "./node_modules/.bin/mocha 'tests/*.spec.js'",
     "testWatch": "mocha 'tests/*.spec.js' --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ewngs/szamlazz.js"
   },
   "author": "Elastic Wings Ltd.",
   "license": "MIT",
@@ -35,5 +31,13 @@
     "merge": "^2.1.1",
     "tough-cookie": "^4.0.0",
     "xml2js": "^0.5.0"
-  }
+  },
+  "bundledDependencies": [
+    "axios",
+    "axios-cookiejar-support",
+    "form-data",
+    "merge",
+    "tough-cookie",
+    "xml2js"
+  ]
 }

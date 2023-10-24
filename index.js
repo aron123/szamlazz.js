@@ -1,8 +1,22 @@
-import {Buyer} from './lib/Buyer.js'
-import {Client} from './lib/Client.js'
-import {Currencies, Currency, Language, Languages, PaymentMethod, PaymentMethods, TaxSubject, TaxSubjects} from './lib/Constants.js'
-import {Invoice} from './lib/Invoice.js'
-import {Item} from './lib/Item.js'
-import {Seller} from './lib/Seller.js'
+const Buyer = require('./lib/Buyer.js')
+const Client = require('./lib/Client.js')
+const {Currencies, Currency, Language, Languages, PaymentMethod, PaymentMethods, TaxSubject, TaxSubjects} = require('./lib/Constants.js')
+const Invoice = require('./lib/Invoice.js')
+const Item = require('./lib/Item.js')
+const Seller = require('./lib/Seller.js')
 
-export {Buyer, Client, Invoice, Item, Seller, Currencies, Currency, Language, Languages, PaymentMethod, PaymentMethods, TaxSubject, TaxSubjects}
+module.exports = {
+    Buyer,
+    Client,
+    Invoice,
+    Item,
+    Seller,
+    Currencies,
+    Currency,
+    Language,
+    Languages,
+    PaymentMethod,
+    PaymentMethods,
+    TaxSubject,
+    TaxSubjects
+}
